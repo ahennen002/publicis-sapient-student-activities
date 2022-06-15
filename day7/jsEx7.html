@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> Demo on JavaScript 5, handleClick and events</h1>
+        <input type = "text" id = "i1">
+        <br />
+        <button onclick = "handleClick(event)">My Button</button>
+        <p onclick="handleClick(event)">My Paragraph</p>
+        <div id = "i2">Name is: </div>
+        <script type = "text/javascript">
+            function handleClick(e) {
+                console.log(e)
+                console.log(e.target); //this is one way to access the element
+                let ele = document.getElementById("i1"); //input#i1
+                console.log(ele.value);
+                let ele2 = document.getElementById('i2'); //div#i2
+                // element has many properties and functions
+                ele2.innerHTML = ele2.innerHTML + '<b>'+ele.value+'</b>';
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> Demo on JavaScript 5, Object Orientation</h1>
+        <script type = "text/javascript">
+            // literal style object
+            let user1 = {name : "Alexander", age : 35};
+            document.write('<p>Name = '+user1.name+', Age = '+user1.age+'</p>');
+            
+            // function style object
+            function Person(name,age) {
+                this.name = name;
+                this.age = age;
+
+            }
+            let user2 = new Person('Jane', 26);
+            document.write('<p>Name = '+user2.name+', Age = '+user2.age+'</p>');
+
+        </script>
+    </body>
+</html>

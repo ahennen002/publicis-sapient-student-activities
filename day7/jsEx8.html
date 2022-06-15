@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> Demo on JavaScript 5, Changing text color</h1>
+        <button onclick = "handleClick(event)">Change Color</button>
+        <p onclick="handleClick(event)">My Paragraph</p>
+        <div id = "i1">Hello World </div>
+        <script type = "text/javascript">
+            function handleClick(e) {
+                let ele = document.getElementById("i1"); //input#i1
+                console.log(ele.value);
+                let ele2 = document.getElementById('i2'); //div#i2
+                // element has many properties and functions
+                ele2.innerHTML = ele2.innerHTML + '<b>'+ele.value+'</b>';
+            }
+        </script>
+    </body>
+</html>
